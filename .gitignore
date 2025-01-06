@@ -16,3 +16,6 @@ src/pbix_analyzer/data
 data/
 obj
 bin
+packages
+.vs
+Properties

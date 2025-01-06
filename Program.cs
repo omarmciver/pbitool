@@ -7,16 +7,18 @@ namespace PBIXAnalyzer
 
     public class Program
     {
-    public static void Main(string[] args)
-    {
-        if (args.Length != 1)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Usage: PBIXAnalyzer <path_to_pbix_file>");
-            return;
-        }
+            if (args.Length != 1)
+            {
+                Console.WriteLine("Usage: PBIXAnalyzer <path_to_pbix_file>");
+                return;
+            }
 
-        var analyzer = new PBIXAnalyzer(args[0]);
-        analyzer.PrintContents();
-        analyzer.AnalyzeModel();
+            var analyzer = new PBIXAnalyzer(args[0]);
+            analyzer.PrintContents();
+            analyzer.AnalyzeModel();
+        }
     }
-    }
+}
+
