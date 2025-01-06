@@ -9,5 +9,10 @@ dist/
 build/
 *.egg-info/
 .env
-.vscode/
 .idea/
+src/pbix_analyzer/data
+.aider*
+.env
+data/
+obj
+bin
